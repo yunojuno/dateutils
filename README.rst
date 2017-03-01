@@ -38,20 +38,20 @@ How?
 
 The package [isoweek](https://pypi.python.org/pypi/isoweek) looks like a great start:
 
-```python
->>> from isoweek import Week
->>> Week.thisweek()
-isoweek.Week(2014, 21)
->>> Week.thisweek().monday()
-datetime.date(2014, 5, 19)
->>> Week.thisweek().days()
-[datetime.date(2014, 5, 19),
- datetime.date(2014, 5, 20),
- datetime.date(2014, 5, 21),
- datetime.date(2014, 5, 22),
- datetime.date(2014, 5, 23),
- datetime.date(2014, 5, 24),
- datetime.date(2014, 5, 25)]
-```
+.. code:: python
+
+ >>> from isoweek import Week
+ >>> Week.thisweek()
+ isoweek.Week(2014, 21)
+ >>> Week.thisweek().monday()
+ datetime.date(2014, 5, 19)
+ >>> Week.thisweek().days()
+ [datetime.date(2014, 5, 19),
+  datetime.date(2014, 5, 20),
+  datetime.date(2014, 5, 21),
+  datetime.date(2014, 5, 22),
+  datetime.date(2014, 5, 23),
+  datetime.date(2014, 5, 24),
+  datetime.date(2014, 5, 25)]
 
 The intention is to wrap this to provide the additional functionality described above.
